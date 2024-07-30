@@ -1,0 +1,937 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+.gallery-image {
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.gallery-image:hover {
+    border: 2px solid #00f;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-nav {
+    margin-bottom: 10px;
+}
+
+.image-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-image {
+    width: 300px; /* Set width */
+    height: 200px; /* Set height */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s, transform 0.3s;
+}
+
+.gallery-image:hover {
+    border: 2px solid #00f;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.image-info {
+    margin-top: 10px;
+}
+
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-nav {
+    margin-bottom: 10px;
+}
+
+.image-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-image {
+    width: 300px; /* Set width */
+    height: 200px; /* Set height */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s, transform 0.3s;
+}
+
+.gallery-image:hover {
+    border: 2px solid #00f;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.image-info {
+    margin-top: 10px;
+}
+
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-nav {
+    margin-bottom: 10px;
+}
+
+.image-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-image {
+    width: 300px; /* Set width */
+    height: 200px; /* Set height */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s, transform 0.3s;
+}
+
+.gallery-image:hover {
+    border: 2px solid #00f;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.fullscreen-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fullscreen-image {
+    max-width: 80%;
+    max-height: 80%;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+#share, #export, #edit, #favorites {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#previous, #next {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-nav {
+    margin-bottom: 10px;
+}
+
+.image-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-image {
+    width: 300px; /* Set width */
+    height: 200px; /* Set height */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s, transform 0.3s;
+}
+
+.gallery-image:hover {
+    border: 2px solid #00f;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.fullscreen-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fullscreen-image {
+    max-width: 80%;
+    max-height: 70%;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+.zoom-controls {
+    margin-top: 20px;
+}
+
+#zoom-in, #zoom-out {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-nav {
+    margin-bottom: 10px;
+}
+
+/* Removed Previous and Next button styles for the front page */
+
+/* Styles for image viewer */
+.image-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-image {
+    width: 300px; /* Set width */
+    height: 200px; /* Set height */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s, transform 0.3s;
+}
+
+.gallery-image:hover {
+    border: 2px solid #00f;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Fullscreen styles */
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.fullscreen-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fullscreen-image {
+    max-width: 80%;
+    max-height: 70%;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+/* Zoom controls styles */
+.zoom-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#zoom-in, #zoom-out {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#zoom-range {
+    width: 150px;
+    cursor: pointer;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-image {
+    width: 300px; /* Set width */
+    height: 200px; /* Set height */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s, transform 0.3s;
+}
+
+.gallery-image:hover {
+    border: 2px solid #00f;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Styles for buttons section */
+.image-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-info button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+    width: 150px; /* Set button width */
+}
+
+.image-info button:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+/* Fullscreen styles */
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.fullscreen-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fullscreen-image {
+    max-width: 80%;
+    max-height: 70%;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+/* Zoom controls styles */
+.zoom-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#zoom-in, #zoom-out {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#zoom-range {
+    width: 150px;
+    cursor: pointer;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-image {
+    width: 300px; /* Set width */
+    height: 200px; /* Set height */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    cursor: pointer;
+    border: 2px solid transparent;
+    background-color: #ee879c; /* Light grey background color for images */
+    transition: border 0.7s, transform 0.7s;
+}
+
+
+.gallery-image:hover {
+    border: 2px solid #00f;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Styles for buttons section */
+.image-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-info button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px; /* Set button width */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#edit {
+    background-color: #007bff; /* Blue */
+    color: #fff;
+}
+
+#edit:hover {
+    background-color: #0056b3;
+}
+
+#favorites {
+    background-color: #28a745; /* Green */
+    color: #a08484;
+}
+
+#favorites:hover {
+    background-color: #218838;
+}
+
+#export {
+    background-color: #ffc107; /* Yellow */
+    color: #000;
+}
+
+#export:hover {
+    background-color: #e0a800;
+}
+
+#share {
+    background-color: #91acb0; /* Teal */
+    color:#a08484;
+}
+
+#share:hover {
+    background-color: #91acb0;
+}
+
+/* Fullscreen styles */
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: #a08484;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.fullscreen-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fullscreen-image {
+    max-width: 80%;
+    max-height: 70%;
+    border: 5px solid #a08484;
+    border-radius: 10px;
+}
+
+/* Zoom controls styles */
+.zoom-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#zoom-in, #zoom-out {
+    background-color: #a08484;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#zoom-range {
+    width: 150px;
+    cursor: pointer;
+}
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #a0859c; /* Light grey background color for the whole page */
+}
+
+/* Gallery Container Styles */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff; /* White background color for the gallery container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    width: 80%; /* Adjust width as needed */
+    margin: auto;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-image {
+    width: 300px; /* Set width */
+    height: 200px; /* Set height */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s, transform 0.3s;
+}
+
+.gallery-image:hover {
+    border: 2px solid #00f;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Styles for buttons section */
+.image-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-info button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px; /* Set button width */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#edit {
+    background-color: #007bff; /* Blue */
+    color: #fff;
+}
+
+#edit:hover {
+    background-color: #0056b3;
+}
+
+#favorites {
+    background-color: #28a745; /* Green */
+    color: #fff;
+}
+
+#favorites:hover {
+    background-color: #218838;
+}
+
+#export {
+    background-color: #ffc107; /* Yellow */
+    color: #000;
+}
+
+#export:hover {
+    background-color: #e0a800;
+}
+
+#share {
+    background-color: #17a2b8; /* Teal */
+    color: #fff;
+}
+
+#share:hover {
+    background-color: #117a8b;
+}
+
+/* Fullscreen styles */
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Container for fullscreen image and controls */
+.fullscreen-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fullscreen image */
+.fullscreen-image {
+    max-width: 80%;
+    max-height: 70%;
+    border: 5px solid #9b8e8e;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+/* Controls container */
+.fullscreen-controls {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fullscreen-controls button {
+    background-color: #9d9292;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#zoom-in {
+    background-color: #b5c4b9; /* Green */
+    color:  #0c0b0b;
+}
+
+#zoom-in:hover {
+    background-color: #98a59b;
+}
+
+#zoom-out {
+    background-color: #c7b6b7; /* Red */
+    color: #0c0b0b;
+}
+
+#zoom-out:hover {
+    background-color: #d3bdbf;
+}
+
+/* Zoom range slider */
+#zoom-range {
+    width: 150px;
+    cursor: pointer;
+}

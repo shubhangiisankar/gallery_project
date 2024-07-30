@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery">
+            <div class="image-viewer">
+                <img class="gallery-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwqmSIb0LzyNrYR8aPstNjgkj1ZfMJe2f-qw&s" alt="Gallery Image 1">
+                <img class="gallery-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytZMLvKNFPl0WXSpXmfeM7c_qrlrI6l2Jxw&s" alt="Gallery Image 2">
+                <img class="gallery-image" src="https://brainalyst.in/wp-content/uploads/2022/08/Its-Scope-In-The-Future.jpg" alt="Gallery Image 3">
+                <img class="gallery-image" src="https://static.vecteezy.com/system/resources/thumbnails/005/442/693/small/data-science-analytics-internet-and-technology-concept-concept-photo.jpg" alt="Gallery Image 4">
+                <img class="gallery-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDv4w1j8DkxoMWLal6LUvVZteWMOto5psoRCVJPTsaY35KZrsjJ_3TGlUJJvB3DYhoZVQ&usqp=CAU" alt="Gallery Image 5">
+                <img class="gallery-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJvA5Vl60hYQXwrRaeDe8xURHupkwbFrmNpEVR0uzkF-wGFvI2OGRK8tn5yZ0-PzsgfyQ&usqp=CAU" alt="Gallery Image 6">
+            </div>
+            <!-- Buttons section -->
+        </div>
+        <div class="image-info">
+            <button id="edit">Edit</button>
+            <button id="favorites">Favorites</button>
+            <button id="export">Export</button>
+            <button id="share">Share</button>
+        </div>
+        <div class="thumbnail-gallery">
+            <!-- Thumbnails will be dynamically added here -->
+        </div>
+    </div>
+
+    <div class="fullscreen-container" id="fullscreen-container" style="display: none;">
+        <button id="close" aria-label="Close">&#x2715;</button>
+        <div class="fullscreen-content">
+            <button id="previous">Previous</button>
+            <img id="fullscreen-image" src="" alt="Fullscreen Image">
+            <button id="next">Next</button>
+        </div>
+        <div class="zoom-controls">
+            <button id="zoom-in">Zoom In</button>
+            <input type="range" id="zoom-range" min="0.1" max="3" step="0.1" value="1">
+            <button id="zoom-out">Zoom Out</button>
+        </div>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
